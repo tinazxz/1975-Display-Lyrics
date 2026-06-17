@@ -23,7 +23,7 @@ const String messages[] = {
   "beautiful shoes",
   "It's not living",
   "If it's not with",
-  "You <3"  // You can add more messages if needed
+  "You"  // You can add more messages if needed
 };
 const int numMessages = sizeof(messages) / sizeof(messages[0]);  // Calculate number of messages
 
