@@ -10,7 +10,7 @@ int messageIndex = 0;        // Index to keep track of the current message
 // Initialize the LCD screen (Address 0x27, 16 columns, 2 rows)
 LiquidCrystal_I2C lcd(0x27, 16, 2);  
 
-// Define the messages to display
+// Define the messages to display, change line and text based on lyrics
 const String messages[] = {
   "And all that I",
   "do is sit",
@@ -25,7 +25,7 @@ const String messages[] = {
   "If it's not with",
   "You"  // You can add more messages if needed
 };
-const int numMessages = sizeof(messages) / sizeof(messages[0]);  // Calculate number of messages
+const int numMessages = sizeof(messages) / sizeof(messages[0]);  // Calc number of messages
 
 void setup() {
   // Start the serial communication
